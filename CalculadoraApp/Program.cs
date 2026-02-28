@@ -34,6 +34,7 @@ namespace CalculadoraApp
                 Console.WriteLine(" 3.-MULTIPLICAR ");
                 Console.WriteLine(" 4.-DIVIDIR ");
                 Console.WriteLine(" 5.-POTENCIA");
+                Console.WriteLine(" 6.-RAIZ CUADRADA ");
                 Console.Write(" Escoge una operación a ejecutar: ");
                 operacion = int.Parse(Console.ReadLine());
 
@@ -106,6 +107,13 @@ namespace CalculadoraApp
                             cuenta_operaciones++;
                             break;
 
+                        case 6:
+                            Console.WriteLine("\n ---OPERACIÓN RAIZ CUADRADA---");
+                            Console.Write("Digita el número base: ");
+                            numero1 = double.Parse(Console.ReadLine());
+                            numero2 = Math.Sqrt(numero1);
+                            Console.WriteLine("La raiz cuadrada de el numero base " + numero1 + ", es de: " + numero2);
+                            break;
 
 
                     }
