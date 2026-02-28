@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -114,6 +115,23 @@ namespace CalculadoraApp
                             numero2 = Math.Sqrt(numero1);
                             Console.WriteLine("La raiz cuadrada de el numero base " + numero1 + ", es de: " + numero2);
                             break;
+
+                        case 7:
+                            Console.WriteLine("\n--- OPERACIÓN RAÍZ CÚBICA ---");
+                            Console.Write("Digita el número: ");
+
+                            // Leemos el número directamente aquí
+                            double numeroRaiz = double.Parse(Console.ReadLine());
+
+                            // Calculamos la raíz usando Math.Pow
+                            double resultadoRaiz = Math.Pow(numeroRaiz, 1.0 / 3.0);
+
+                            Console.WriteLine($"El resultado de la Raíz Cúbica es: {resultadoRaiz}");
+
+                            // IMPORTANTE: Sumamos a la cuenta de operaciones antes del break
+                            cuenta_operaciones++;
+                            break;
+
 
 
                     }
