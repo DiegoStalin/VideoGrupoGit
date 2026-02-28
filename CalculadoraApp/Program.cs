@@ -33,6 +33,7 @@ namespace CalculadoraApp
                 Console.WriteLine(" 2.-RESTAR ");
                 Console.WriteLine(" 3.-MULTIPLICAR ");
                 Console.WriteLine(" 4.-DIVIDIR ");
+                Console.WriteLine(" 5.-POTENCIA");
                 Console.Write(" Escoge una operación a ejecutar: ");
                 operacion = int.Parse(Console.ReadLine());
 
@@ -93,6 +94,18 @@ namespace CalculadoraApp
                                 cuenta_operaciones++;
                             }
                             break;
+
+                        case 5:
+                            Console.WriteLine("\n ---OPERACIÓN POTENCIA---");
+                            Console.Write("Digita la base: ");
+                            numero1 = double.Parse(Console.ReadLine());
+                            Console.Write("Digita el exponente: ");
+                            numero2 = double.Parse(Console.ReadLine());
+                            double resp_potencia = Math.Pow(numero1, numero2);
+                            Console.WriteLine("El Resultado de la Potencia es: " + resp_potencia);
+                            cuenta_operaciones++;
+                            break;
+
 
 
                     }
