@@ -11,7 +11,7 @@ namespace CalculadoraApp
     {
         static void Main(string[] args)
         {
-            // Definir Variables
+            // Definir las Variables
 
             char continuar='S';
             string nombre, valida;
