@@ -131,6 +131,27 @@ namespace CalculadoraApp
                             // IMPORTANTE: Sumamos a la cuenta de operaciones antes del break
                             cuenta_operaciones++;
                             break;
+                        case 8:
+                            Console.WriteLine("=== OPERACION FACTORIAL ==");
+                            Console.Write("Ingrese el numero que desea saber su factorial: ");
+                            int numeroIngresado = int.Parse(Console.ReadLine());
+                            while (numeroIngresado < 0)
+                            {
+                                Console.WriteLine("Error: no puede ingresar un numero negativo.");
+                                Console.Write("Ingrese nuevamente el numero: ");
+                                numeroIngresado = int.Parse(Console.ReadLine());
+                            }
+                            double fact = 1;
+                            for (int i = 1; i <= numeroIngresado; i++)
+                            {
+                                fact *= i;
+                            }
+                            Console.WriteLine("numero Ingresado: " + numeroIngresado + "\nSu factorial es" + " = " + fact);
+                            cuenta_operaciones++;
+                            break;
+
+
+
 
 
 
